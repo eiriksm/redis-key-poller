@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/eiriksm/redis-key-poller#readme",
   "dependencies": {
+    "cors": "^2.7.1",
     "express": "^4.13.3",
     "hiredis": "^0.4.1",
     "redis": "^2.3.0"
