@@ -16,4 +16,4 @@ addons:
        - g++-4.8
 after_script:
   - npm run coverage
-  - cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js > /dev/null 2>&1
+  - cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
