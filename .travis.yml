@@ -5,6 +5,8 @@ node_js:
   - "4"
   - "0.10"
 sudo: false
+services:
+  - redis-server
 addons:
    apt:
      sources:
