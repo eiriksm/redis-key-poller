@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run lint && mocha",
-    "coverage": "istanbul cover -- _mocha",
+    "test": "npm run lint && mocha --exit",
+    "coverage": "istanbul cover -- _mocha --exit",
     "lint": "eslint .",
     "start": "node start.js"
   },
