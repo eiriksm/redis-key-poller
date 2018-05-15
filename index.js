@@ -22,11 +22,11 @@ app.get('/subscribe/:key', function (req, res) {
   subscriber.on('message', function(ch, msg) {
     res.send(msg);
     subscriber.unsubscribe();
-    subscriber.end();
+    subscriber.quit();
   });
   // Wait for a maximum of 45 seconds (default), then stop and send no content.
   setTimeout(function() {
-    subscriber.end();
+    subscriber.quit();
     res.status(204).end();
   }, app.get('timeout'));
   subscriber.on('subscribe', function() {
